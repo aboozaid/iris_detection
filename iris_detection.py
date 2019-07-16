@@ -72,7 +72,7 @@ def getPupil(frame):
             pupil = contours
             global centroid
             centroid = (int(x), int(y))
-            cv.drawContours(pupilImg, pupil, contourIdx ,color = (0,0,0), thickness =  cv.FILLED)
+            cv.drawContours(pupilImg, pupil, contourIdx ,color = (56,31,196), thickness =  1)
             break
         contourIdx += 1
     return (pupilImg)
